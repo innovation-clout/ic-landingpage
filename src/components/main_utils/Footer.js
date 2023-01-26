@@ -16,11 +16,11 @@ const Footer = () => {
     return (
       <a
         href={link}
-        className="bg-contain bg-no-repeat h-6 w-6 md:h-8 md:w-8"
+        className="bg-contain bg-no-repeat h-6 w-6 md:h-8 md:w-8 text-white"
         style={{
           backgroundImage: `url('${Icon}')`,
         }}
-      ></a>
+      >{" "}</a>
     );
   };
   return (
@@ -61,10 +61,9 @@ const Footer = () => {
             Playbooks
           </div>
           <a
-            className=""
+            target="_blank"
+            rel="norefferer"
             href="https://anchor.fm/clint953"
-            target={"_blank"}
-            rel={"norefferer"}
           >
             Podcast
           </a>
@@ -97,8 +96,8 @@ const Footer = () => {
         <a
           className=""
           href="https://anchor.fm/clint953"
-          target={"_blank"}
-          rel={"norefferer"}
+          target="_blank"
+          rel="norefferer"
         >
           Podcast
         </a>

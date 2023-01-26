@@ -16,7 +16,7 @@ const AboutPage = () => {
             target="_blank"
             style={{ backgroundImage: `url('${LinkedinBlank}')` }}
             className="absolute bottom-3 right-2 bg-cover w-6 h-6 transition duration-500 ease-in-out transform hover:scale-105"
-          />
+          > </a>
         </div>
       </div>
     );

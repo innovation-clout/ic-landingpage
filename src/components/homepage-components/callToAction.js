@@ -1,5 +1,5 @@
 import CallToActionBanner from "../../images/call-to-action.svg";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link} from "react-scroll";
 import "./homepage_css/homepage.css";
 
 const CallToAction = () => {

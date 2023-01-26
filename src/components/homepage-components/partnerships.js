@@ -16,7 +16,7 @@ const PartnerShips = () => {
   const Partner = ({ image, link }) => {
     return (
       <div className="flex flex-wrap justify-center">
-        <a className=" w-36 h-36 md:w-48 md:h-48" href={link} target="_blank">
+        <a className=" w-36 h-36 md:w-48 md:h-48" href={link} target="_blank" rel="noreferrer" >
           <img
             src={image}
             alt="..."

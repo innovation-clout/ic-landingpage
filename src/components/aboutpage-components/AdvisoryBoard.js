@@ -21,21 +21,21 @@ const AdvisoryBoard = () => {
           className="w-full relative"
           href={plug}
           target="_blank"
-          rel="noreferrer"
+          rel={"noreferrer"}
         >
           <img src={image} alt="..." />
 
           {name && (
             <div className="flex flex-col w-full absolute -bottom-1 px-4">
               <a
-                className="bg-contain bg-no-repeat w-6 h-6"
+                className="bg-contain bg-no-repeat w-6 h-6 text-white"
                 style={{
                   backgroundImage: `url('${Linkedin}')`,
                 }}
                 href={plug}
                 target="_blank"
-                rel="norefferer"
-              />
+                rel={"noreferrer"}
+              >.</a>
               <div className="flex flex-row w-full justify-between items-start text-white">
                 <h2 className="text-xl font-extrabold tracking wider pt-2">
                   {name}
