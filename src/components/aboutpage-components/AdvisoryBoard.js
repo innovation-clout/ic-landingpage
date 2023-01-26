@@ -17,11 +17,8 @@ const AdvisoryBoard = () => {
 
     return (
       <div className="flex flex-wrap justify-center">
-        <a
+        <div
           className="w-full relative"
-          href={plug}
-          target="_blank"
-          rel={"noreferrer"}
         >
           <img src={image} alt="..." />
 
@@ -43,7 +40,7 @@ const AdvisoryBoard = () => {
                 <div
                   onMouseEnter={() => setName(name)}
                   onMouseLeave={() => setName(null)}
-                  onClick={() => isName? setName(name) : setName(null)}
+                  onClick={() => isName === "none" ? setName(name) : setName("none") }
                   className=" hover:bg-magenta rounded-md h-12"
                 >
                   <div
@@ -56,7 +53,7 @@ const AdvisoryBoard = () => {
               </div>
             </div>
           )}
-        </a>
+        </div>
 
         <div
           className={`${
