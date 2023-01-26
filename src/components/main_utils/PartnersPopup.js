@@ -34,7 +34,7 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
         (isOpen && "block") || "hidden"
       } fixed w-screen h-screen animated fadeIn faster flex justify-center items-center inset-0 z-100 bg-black bg-opacity-70`}
     >
-      <div className="popup w-1/2 lg:w-2/5 h-96 bg-gradient-to-r from-indigo to-purple rounded-xl flex flex-col justify-center text-center items-center">
+      <div className="popup md:w-1/2 lg:w-2/5 h-96 bg-gradient-to-r from-indigo to-purple rounded-xl flex flex-col justify-center text-center items-center">
         <div
           onClick={() => setisOpen(false)}
           className="w-full flex flex-row justify-start px-4 text-white text-xl font-light pt-4"
