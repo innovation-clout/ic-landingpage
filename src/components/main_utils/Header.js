@@ -20,7 +20,7 @@ const Header = () => {
               backgroundImage: `url('${LogoBlank}')`,
             }}
             href="/"
-          />
+          >{" "}</a>
           <div className="hidden md:flex flex-row gap-5 tracking-wider text-xs">
             <a className="" href="/discover">
               Discover
@@ -44,8 +44,6 @@ const Header = () => {
           <div className=" flex flex-row bg-white text-aqua font-bold text-xs md:text-base p-2 lg:p-0 rounded-full lg:h-12 lg:w-40 text-center">
             <a
               href="https://anchor.fm/clint953"
-              target="_blank"
-              rel="norefferer"
               className="w-full self-center text-center"
             >
               Podcast
