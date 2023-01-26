@@ -61,8 +61,6 @@ const Footer = () => {
             Playbooks
           </div>
           <a
-            target="_blank"
-            rel="norefferer"
             href="https://anchor.fm/clint953"
           >
             Podcast
@@ -94,10 +92,7 @@ const Footer = () => {
           Playbooks
         </div>
         <a
-          className=""
           href="https://anchor.fm/clint953"
-          target="_blank"
-          rel="norefferer"
         >
           Podcast
         </a>
