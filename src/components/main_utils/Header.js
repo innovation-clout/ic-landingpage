@@ -23,31 +23,35 @@ const Header = () => {
           >{" "}</a>
           <div className="hidden md:flex flex-row gap-5 tracking-wider text-xs">
             <a className="" href="/discover">
-              Discover
+              discover
             </a>
             <a className="" href="/opportunities">
-              Opportunities
+              opportunities
             </a>
             <div className="" onClick={() => setIsOpen(true)}>
-              Partner with us
+              partnerships
             </div>
+            <a className="" href="/mentors">
+              mentors
+            </a>
+            
           </div>
         </div>
 
         <div className="flex flex-row font-bold text-center gap-3">
-          <div
-            onClick={() => setIsComming(true)}
-            className="flex flex-row items-center justify-content-center border-white border-2 text-white text-xs p-2  lg:p-0 md:text-base font-bold rounded-full lg:h-12 lg:w-40 text-center"
-          >
-            <h2 className="w-full self-center text-center">Playbooks</h2>
-          </div>
-          <div className=" flex flex-row bg-white text-aqua font-bold text-xs md:text-base p-2 lg:p-0 rounded-full lg:h-12 lg:w-40 text-center">
+
+          <div className=" flex flex-row bg-white text-aqua font-bold text-xs md:text-base p-2 lg:p-0 rounded-full lg:h-10 lg:w-40 text-center">
             <a
               href="https://anchor.fm/clint953"
               className="w-full self-center text-center"
             >
-              Podcast
+              podcast
             </a>
+          </div>
+          <div
+            className="flex flex-row items-center justify-content-center border-white border-2 text-white text-xs p-2  lg:p-0 md:text-base font-bold rounded-full lg:h-10 lg:w-40 text-center"
+          >
+            <a href="/resources" className="w-full self-center text-center">resources</a>
           </div>
         </div>
       </div>

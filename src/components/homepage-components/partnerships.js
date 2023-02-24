@@ -6,8 +6,9 @@ import TKS from "../../images/partnerships/tks.png";
 import Villars from "../../images/partnerships/villars.png";
 import ADP from "../../images/partnerships/adp.png";
 import JA from "../../images/partnerships/ja.png"
-import Grex from "../../images/partnerships/grex.jpeg"
+import P100 from "../../images/partnerships/prospect-100.png"
 import Frenter from "../../images/partnerships/frenter.png"
+
 
 
 import "./homepage_css/looper-styles.css";
@@ -28,7 +29,7 @@ const PartnerShips = () => {
   };
 
   return (
-    <div id="partners" className="w-screen h-screen flex flex-col items-center justify-center mt-20 md:mt-0">
+    <div id="partners" className="w-screen h-screen flex flex-col items-center justify-center ">
       <h2 className="uppercase text-lg  md:text-2xl tracking-wider text-bright-purple font-bold text-center">
         partners supporting our innovators
       </h2>
@@ -40,7 +41,7 @@ const PartnerShips = () => {
           <Partner image={Villars} link="https://villarsinstitute.org/" />
           <Partner image={TKS} link="https://www.tks.world/" />
           <Partner image={JA} link="https://www.jaworldwide.org/" />
-          <Partner image={Grex} link="https://www.grex-careers.com/" />
+          <Partner image={P100} link="https://www.prospect100.com/" />
           <Partner image={Frenter} link="https://www.frenter.com/" />
         </div>
       </InfiniteLooper>

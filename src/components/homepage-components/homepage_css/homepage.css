@@ -16,3 +16,37 @@
     }
   }
 
+  .obj {
+    offset-path: path('M228 397.113C302.309 459.108 475.46 488.206 568.036 406.014 M834 64.6611C917.132 8.3789 1063.17 -1.84789 1143.93 73.8859');
+    offset-distance: 0;
+    animation: move 5000ms forwards;
+    
+
+  }
+
+  .rocket {
+    background-color: transparent;
+  }
+  
+  @keyframes move {
+    to {
+      offset-distance: 100%;
+    }
+  }
+
+  .floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+
