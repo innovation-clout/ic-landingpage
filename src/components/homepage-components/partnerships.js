@@ -31,7 +31,7 @@ const PartnerShips = () => {
   return (
     <div id="partners" className="w-screen h-screen flex flex-col items-center justify-center ">
       <h2 className="uppercase text-lg  md:text-2xl tracking-wider text-bright-purple font-bold text-center">
-        partners supporting our innovators
+        our partners
       </h2>
       <InfiniteLooper speed="10" direction="right">
         <div className="flex items-center mx-2 w-full gap-4">

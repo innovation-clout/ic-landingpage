@@ -21,8 +21,6 @@ const Process = () => {
 
   const rocket = useRef(document.querySelector(".rocket"))
 
-  console.log(useOnScreen(rocket))
-
 
 
   return (
@@ -112,7 +110,7 @@ const Process = () => {
         
         <div
         ref={rocket}
-          className={`absolute left-0 w-48 h-48 md:bg-cover ${useOnScreen(rocket) && "obj"}`}
+          className={`absolute left-0 w-48 hidden md:flex h-48 md:bg-cover ${useOnScreen(rocket) && "obj"}`}
           style={{backgroundImage: `url('${Rocket}')` }}
         />
        
