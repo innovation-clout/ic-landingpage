@@ -73,19 +73,19 @@ const AboutPage = () => {
           />
           <FoundingMember
             image={Adrija}
-            link="https://www.linkedin.com/in/clint-c-a7461722b/"
+            link="https://www.linkedin.com/in/adrija-ghosh-968384243/"
           />
           <FoundingMember
             image={Pawel}
-            link="https://www.linkedin.com/in/clint-c-a7461722b/"
+            link="https://www.linkedin.com/in/pawe%C5%82-plewa-78b398250/"
           />
           <FoundingMember
             image={Rumeza}
-            link="https://www.linkedin.com/in/clint-c-a7461722b/"
+            link="https://www.linkedin.com/in/rumeza-fatima-899101229/"
           />
           <FoundingMember
             image={Harsh}
-            link="https://www.linkedin.com/in/clint-c-a7461722b/"
+            link="https://www.linkedin.com/in/harsh-bhatt-8638041b1/"
           />
         </div>
       </div>
