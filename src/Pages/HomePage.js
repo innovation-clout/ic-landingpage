@@ -47,7 +47,7 @@ function HomePage() {
             <div className="bg-cover w-12 h-12" style={{ backgroundImage: `url('${DoubleArrow}')` }} />
           </div>
           
-            <JoinCommunityPopup isOpen={isOpen}/>
+            <JoinCommunityPopup isOpen={isOpen} setisOpen={setIsOpen}/>
       </div>
        
       </div>
