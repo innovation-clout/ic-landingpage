@@ -38,8 +38,8 @@ function HomePage() {
       </div>
 
       <div className="flex flex-col md:hidden bg-cover h-screen w-full"   style={{ backgroundImage: `url('${MobileBanner}')` }}>
-      <div className="floating absolute bg-cover w-72 h-72 right-28 top-10" style={{ backgroundImage: `url('${AstroMobile}')` }}/>
-      <div className="flex flex-col gap-8">
+      <div className="floating absolute bg-cover w-72 h-72 left-0 top-10" style={{ backgroundImage: `url('${AstroMobile}')` }}/>
+      <div className="flex flex-col gap-10">
       <h2 className="text-4xl text-center tracking-wider font-bold text-white mt-64 mx-10">
         Let the opportunities come to you. 
           </h2>
