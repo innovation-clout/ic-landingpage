@@ -2,7 +2,7 @@ import Link from "react-scroll/modules/components/Link";
 
 const MobileCallToAction = () => {
   return (
-    <div class="h-96 w-full rounded-md bg-gradient-to-r from-purple to-aqua bg-opacity-10 flex flex-col items-center justify-center">
+    <div class="h-96 w-full bg-gradient-to-r from-purple to-aqua bg-opacity-10 flex flex-col items-center justify-center">
       <div style={{height: "20rem"}} className="flex flex-col justify-center items-center gap-10 text-center w-full text-white bg-navy">
         <h2 className="text-4xl md:text-3xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple to-aqua font-black text-center ">
           An enterprise backed platform.

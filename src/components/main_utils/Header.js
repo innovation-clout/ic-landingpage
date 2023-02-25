@@ -1,19 +1,19 @@
 import LogoBlank from "../../images/logo-text.svg";
 import PartnersPopup from "./PartnersPopup";
-import Toggle from "../../images/toggle.svg";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const [isComming, setIsComming] = useState(false);
   return (
     <header
       className="fixed md:sticky md:bg-gradient-to-r from-purple to-aqua top-0 md:flex flex-col bg-cover h-10 w-10 md:h-20 md:w-auto "
-      style={{ zIndex: 2}} >
-      <div className={`h-10 w-10 bg-cover md:hidden ${(!isComming && "flex") || "hidden"}`} style={{backgroundImage: `url('${Toggle}')` }} onClick={() => setIsComming(true)} />
-      
+      style={{ zIndex: 2 }}
+    >
+
+
       <div className="hidden md:flex flex-row items-center gap-3 px-4 lg:px-20 py-3 justify-between items-center text-center font-semibold text-xm text-white">
         <div className="flex flex-row md:gap-5 lg:gap-20 font-semibold text-xs items-center text-center ">
           <a
@@ -59,8 +59,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      <Sidebar openNav={isComming} setNav={setIsComming} setIsOpen={setIsOpen} />
+      <div className={`${isComming && "w-screen h-screen inset-0 z-100 bg-black bg-opacity-70" } flex md:hidden justify-start items-center `} onClick={() => setIsComming(!isComming)}>
+        <Sidebar setNav={setIsComming} OpenNav={isComming} setIsOpen={setIsOpen} />
+      </div>
+      <div className="flex flex-col items-center justify-center min-h-screen py-2"></div>
       <PartnersPopup isOpen={isOpen} setisOpen={setIsOpen} />
     </header>
   );

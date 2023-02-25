@@ -13,7 +13,15 @@ module.exports = {
         "lilac": "#AA7AF2",
         "navy": "#4A51B4"
         
-      }
+      },
+      animation: {
+        shine: "shine 1s",
+      },
+      keyframes: {
+        shine: {
+          "100%": { left: "125%" },
+        },
+      },
     },
   },
   plugins: [],

@@ -1,19 +1,27 @@
 import LogoBlank from "../../images/logo-purple-text.svg";
-import Mic from "../../images/mic.svg"
+import Mic from "../../images/mic.svg";
+import Toggle from "../../images/toggle.svg";
 
-const Sidebar = ({ openNav, setNav, setIsOpen, i }) => {
-  return openNav ? (
-    <div
-      className={` w-screen h-screen flex md:hidden justify-start items-center inset-0 z-100 bg-black bg-opacity-70  `}
-    >
-      <div className={`w-1/2 h-screen fixed bg-white flex flex-col text-center items-center transition duration-500 ease-in-out transform ease-in-out transition-all duration-300  duration-300 ${ openNav ? 'translate-x-0' : '-translate-x-full'}`}>
+const Sidebar = ({ setNav, OpenNav, setIsOpen }) => {
+
+  return (
+    <>
+      {OpenNav ? (
+        <></>
+      ) : (
         <div
-          onClick={() => setNav(false)}
-          className="w-full flex flex-row justify-end px-4 text-black text-xl font-light pt-2"
-        >
-          x
-        </div>
-        <div className="flex flex-col h-full px-2 gap-10 tracking-wider text-black text-sm items-start">
+          className={`h-10 w-10 bg-cover fixed top-1 left-3`}
+          style={{ backgroundImage: `url('${Toggle}')` }}
+          onClick={() => setNav(!OpenNav)}
+        />
+      )}
+
+      <div
+        className={`top-0 left-0 w-1/2 bg-white flex fixed h-full z-40 pt-6 ease-in-out duration-300 ${
+          OpenNav ? "translate-x-0 " : "-translate-x-full"
+        }`}
+      >
+                <div className="flex flex-col h-full px-2 gap-10 tracking-wider text-black text-sm items-start">
           <a
             className="bg-contain bg-no-repeat h-10 w-36 mt-5"
             style={{
@@ -51,15 +59,12 @@ const Sidebar = ({ openNav, setNav, setIsOpen, i }) => {
               </a>
               <div className="w-6 h-6 bg-contain bg-no-repeate" style={{backgroundImage: `url('${Mic}')`}} />
               </div>
-              
 
             </div>
           </div>
         </div>
       </div>
-    </div>
-  ) : (
-    <></>
+    </>
   );
 };
 

@@ -9,12 +9,13 @@ import Astro from "../images/astronaut.svg"
 import AstroMobile from "../images/mobile-astro.svg"
 import DoubleArrow from "../images/double-arrow.svg"
 import JoinCommunityPopup from "../components/homepage-components/joinCommunityPopup";
-
+import LOICard from "../components/homepage-components/LOICard";
 import "../components/homepage-components/homepage_css/homepage.css"
 import { useState } from "react";
 
 function HomePage() {
   const [isOpen, setIsOpen] = useState(false)
+
 
   return (
     <div className="relative flex flex-col w-full h-full bg-navy" id="join">
@@ -53,6 +54,7 @@ function HomePage() {
        
       </div>
 
+     
       <Process />
 
       <PartnerShips />
@@ -64,6 +66,8 @@ function HomePage() {
       <div className="flex md:hidden mb-40">
       <MobileCallToAction />
       </div>
+
+      <LOICard/>
 
 
     </div>
