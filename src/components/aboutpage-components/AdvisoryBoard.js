@@ -28,8 +28,8 @@ const AdvisoryBoard = () => {
               >
                 .
               </a>
-              <div className="flex flex-row w-full justify-between items-center md:items-start text-white h-10 lg:h-[3.5rem]">
-                <div className="text-xs flex items-center h-full lg:text-lg font-extrabold  tracking-wider ">
+              <div className="flex flex-row w-full justify-between items-center md:items-start text-white h-7 md:h-10 lg:h-[3.5rem]">
+                <div className="text-[0.5rem] md:text-[0.6rem]  flex items-center h-full lg:text-lg font-extrabold  tracking-wider ">
                   <h2>{name}</h2>
                 </div>
                 <div
