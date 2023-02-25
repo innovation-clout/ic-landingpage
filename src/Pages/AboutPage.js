@@ -37,7 +37,7 @@ const AboutPage = () => {
         className="hidden w-full h-screen bg-cover bg-no-repeat md:flex flex-col items-center justify-center px-20 pb-64 text-white"
         style={{ backgroundImage: `url('${Banner}')` }}
       >
-        <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 lg:mb-0">
+        <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 md:mb-40 lg:mb-0">
           <div className="uppercase border border-white text-lg w-64 py-1 font-light px-4 h-10 rounded-full">
             Introducing Torpedo
           </div>
@@ -62,7 +62,7 @@ const AboutPage = () => {
       </div>
       <div className="flex flex-col items-center justify-center px-5 md:px-20 h-1/2">
       <h2 className="text-4xl font-black text-white mb-10">Our Team</h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-20 md:px-20 md:my-10 lg:my-0 lg:px-0">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20 lg:px-20 md:my-10 lg:my-0 lg:px-0">
           <FoundingMember
             image={Dhruv}
             link="https://www.linkedin.com/in/drvgoel/"

@@ -3,7 +3,7 @@ import LogoBlank from "../../images/logo-purple-text.svg";
 const Sidebar = ({ openNav, setNav, setIsOpen, i }) => {
   return openNav ? (
     <div
-      className={`w-screen h-screen flex justify-start items-center inset-0 z-100 bg-black bg-opacity-70`}
+      className={` w-screen h-screen flex md:hidden justify-start items-center inset-0 z-100 bg-black bg-opacity-70`}
     >
       <div className="w-1/2 h-screen bg-white flex flex-col text-center items-center">
         <div

@@ -28,23 +28,25 @@ const AdvisoryBoard = () => {
               >
                 .
               </a>
-              <div className="flex flex-row w-full justify-between items-center md:items-start text-white">
-                <h2 className="text-xs md:text-xl font-extrabold tracking wider mb-2 pt-2">
-                  {name}
-                </h2>
+              <div className="flex flex-row w-full justify-between items-center md:items-start text-white h-7 md:h-10 lg:h-[3.5rem]">
+                <div className="text-xs flex items-center h-full lg:text-lg font-extrabold  tracking-wider ">
+                  <h2>{name}</h2>
+                </div>
                 <div
-                  onMouseEnter={() => setName(name)}
-                  onMouseLeave={() => setName(null)}
-                  onClick={() =>
-                    isName === "none" ? setName(name) : setName("none")
-                  }
-                  className=" md:hover:bg-magenta rounded-md h-4 md:h-12"
+
+                 
+                  className=" lg:hover:bg-magenta rounded-md flex flex-col items-center justify-center h-full lg:mb-"
                 >
                   <div
-                    className="bg-contain bg-no-repeat w-4 h-4 md:w-10 md:h-10"
+                    className="bg-contain bg-no-repeat w-4 h-4 md:h-5 md:w-5 lg:w-10 lg:h-10"
                     style={{
                       backgroundImage: `url('${MoreInfo}')`,
                     }}
+                    onMouseEnter={() => setName(name)}
+                  onMouseLeave={() => setName(null)}
+                    onClick={() =>
+                    isName === "none" ? setName(name) : setName("none")
+                  }
                   />
                 </div>
               </div>
@@ -55,7 +57,7 @@ const AdvisoryBoard = () => {
         <div
           className={`${
             (isName === name && "visible") || "invisible"
-          } w-full h-32 bg-magenta z-10 text-truncate text-xs tracking-wider px-1 py-1 text-white font-light shadow-xl `}
+          } w-full h-32 bg-magenta z-10 text-truncate text-xs md:text-base text-center tracking-wider px-1 py-1 text-white font-light shadow-xl `}
         >
           {bio}
         </div>
@@ -65,11 +67,27 @@ const AdvisoryBoard = () => {
 
   return (
     <div className="w-screen px-10 md:px-20 relative">
-    <div className="hidden md:block">
+
+    <div className="hidden lg:block">
     <CustomCarousel
         breakpoints={carouselBreakpoints(4, 4, 3, 2)}
         length={"w-full px-10"}
         position={{right: "0rem", top: "10rem"}}
+      >
+      {ADVISORS.map((advisor) => <AdvisorItem
+          image={advisor.image}
+          name={advisor.name}
+          plug={advisor.plug}
+          bio={advisor.bio}
+        />)}
+        
+      </CustomCarousel>
+    </div>
+    <div className="hidden md:block lg:hidden">
+    <CustomCarousel
+        breakpoints={carouselBreakpoints(4, 4, 3, 2)}
+        length={"w-full px-10"}
+        position={{right: "0rem", top: "6rem"}}
       >
       {ADVISORS.map((advisor) => <AdvisorItem
           image={advisor.image}

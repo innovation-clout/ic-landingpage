@@ -1,23 +1,22 @@
 import Instagram from "../../images/social_media/instagram.svg";
 import Twitter from "../../images/social_media/twitter.svg";
 import Linkedin from "../../images/social_media/linkedin.svg";
-
 import Moon from "../../images/planets/moon.svg";
 import Rocket from "../../images/rocket-main.svg";
 import Text from "../../images/launch-career.svg";
 import Text2 from "../../images/launch-career-purple.svg";
 import "./footer.css";
-import { useState } from "react";
 import FooterBg from "../../images/footer-bg.svg";
 import { Link } from "react-scroll";
 
 const Footer = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const SocialIcon = ({ link, Icon }) => {
     return (
       <a
         href={link}
         className="bg-contain bg-no-repeat h-6 w-6 md:h-8 md:w-8 text-white"
+        target={"_blank"}
+        rel="noreferrer"
         style={{
           backgroundImage: `url('${Icon}')`,
         }}
@@ -59,27 +58,27 @@ const Footer = () => {
           partnerships
         </Link>
         <div className="w-1 h-1 bg-aqua rounded-full" />
-        <a href="https://anchor.fm/clint953">podcast</a>
+        <a href="https://anchor.fm/clint953" target={"_blank"} rel="noreferrer">podcast</a>
       </div>
     );
   };
   return (
     <footer
       className={`${
-        window.location.pathname == "/resources" ||
-        (window.location.pathname == "/mentors" && "bg-white text-purple") ||
+        (window.location.pathname === "/resources") ||
+        (window.location.pathname === "/mentors" && "bg-white text-purple") ||
         "bg-navy text-white"
       } flex flex-col w-full justify-between items-center`}
     >
       <div className="flex flex-row w-full justify-center text-center items-center px-16 text-sm text-lilac font-bold">
         <div className="flex flex-row gap-5 items-center justify-center my-2">
-          <SocialIcon Icon={Instagram} />
+          <SocialIcon Icon={Instagram} link={"https://www.instagram.com/torpedo.world/"} />
 
           <div className="flex items-center justify-center mt-2">
             <SocialIcon Icon={Twitter} />
           </div>
 
-          <SocialIcon Icon={Linkedin} />
+          <SocialIcon Icon={Linkedin} link={"https://www.linkedin.com/company/jointorpedo/about/"}/>
         </div>
       </div>
 
@@ -102,7 +101,7 @@ const Footer = () => {
             </div>
 
             <div
-              className="bg-cover bg-no-repeat rotate absolute"
+              className="hidden lg:block bg-cover bg-no-repeat rotate absolute"
               style={{
                 backgroundImage: `url('${Moon}')`,
                 width: "30rem",
@@ -112,11 +111,11 @@ const Footer = () => {
 
             <div className="flex flex-col items-center justify-center gap-3 mr-3 mb-10">
               <div
-                className="bg-cover w-64 h-10 bg-no-repeat"
+                className="bg-cover w-64 h-10 bg-no-repeat hidden lg:block "
                 style={{
-                  backgroundImage: `url('${
-                    ((window.location.pathname == "/resources" ||
-                      window.location.pathname == "/mentors") &&
+                  backgroundImage: `url('${(
+                    ((window.location.pathname === "/resources" ||
+                      window.location.pathname === "/mentors")) &&
                       Text2) ||
                     Text
                   }')`,

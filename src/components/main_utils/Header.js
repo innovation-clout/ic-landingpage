@@ -1,6 +1,5 @@
 import LogoBlank from "../../images/logo-text.svg";
 import PartnersPopup from "./PartnersPopup";
-import CommingSoonPopup from "./CommingSoonPopup";
 import Toggle from "../../images/toggle.svg";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
@@ -13,7 +12,7 @@ const Header = () => {
     <header
       className="fixed md:sticky md:bg-gradient-to-r from-purple to-aqua top-0 md:flex flex-col bg-cover h-10 w-10 md:h-20 md:w-auto "
       style={{ zIndex: 2}} >
-      <div className={`h-10 w-10 bg-cover md:hidden ${!isComming && "flex" || "hidden"}`} style={{backgroundImage: `url('${Toggle}')` }} onClick={() => setIsComming(true)} />
+      <div className={`h-10 w-10 bg-cover md:hidden ${(!isComming && "flex") || "hidden"}`} style={{backgroundImage: `url('${Toggle}')` }} onClick={() => setIsComming(true)} />
       
       <div className="hidden md:flex flex-row items-center gap-3 px-4 lg:px-20 py-3 justify-between items-center text-center font-semibold text-xm text-white">
         <div className="flex flex-row md:gap-5 lg:gap-20 font-semibold text-xs items-center text-center ">
@@ -43,15 +42,17 @@ const Header = () => {
         </div>
 
         <div className="flex flex-row font-bold text-center gap-3">
-          <div className=" flex flex-row bg-white text-aqua font-bold text-xs md:text-base p-2 lg:p-0 rounded-full lg:h-10 lg:w-40 text-center">
+          <div className=" flex flex-row bg-white text-aqua font-bold text-xs lg:text-base p-2 rounded-full md:px-3 lg:p-0  lg:px-0 lg:h-10 lg:w-40 text-center">
             <a
               href="https://anchor.fm/clint953"
+              target={"_blank"}
+              rel="noreferrer"
               className="w-full self-center text-center"
             >
               podcast
             </a>
           </div>
-          <div className="flex flex-row items-center justify-content-center border-white border-2 text-white text-xs p-2  lg:p-0 md:text-base font-bold rounded-full lg:h-10 lg:w-40 text-center">
+          <div className="flex flex-row items-center justify-content-center border-white border-2 text-white text-xs p-2 md:px-3 lg:p-0 lg:text-base font-bold rounded-full lg:h-10 lg:w-40 text-center">
             <a href="/resources" className="w-full self-center text-center">
               resources
             </a>

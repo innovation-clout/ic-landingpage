@@ -9,7 +9,7 @@ const MentorsPage = () => {
         className="hidden w-screen h-screen bg-cover bg-no-repeat md:flex flex-col items-center justify-center pb-64 px-20 gap-10"
         style={{ backgroundImage: `url('${Banner}')` }}
       >
-        <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10">
+        <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 md:mb-40 lg:mb-0">
           <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light h-10 rounded-full">
             PARTNERING WITH ADP LIST
           </div>
@@ -23,6 +23,7 @@ const MentorsPage = () => {
                 className="w-16 h-16 md:w-28 md:h-28"
                 target="_blank"
                 rel="noreferrer"
+                href="https://app.adplist.org/"
               >
                 <img
                   src={ADP}
@@ -34,17 +35,15 @@ const MentorsPage = () => {
 
             <h2 className="text-xl">x</h2>
             <div className="flex flex-wrap justify-center">
-              <a
+              <div
                 className=" w-16 h-16 md:w-28 md:h-28"
-                target="_blank"
-                rel="noreferrer"
               >
                 <img
                   src={Torpedo}
                   alt="..."
                   className="transition rounded-full duration-500 ease-in-out transform hover:scale-105 shadow-lg"
                 />
-              </a>
+              </div>
             </div>
             
           </div>
@@ -69,6 +68,7 @@ const MentorsPage = () => {
                 className="w-16 h-16 md:w-28 md:h-28"
                 target="_blank"
                 rel="noreferrer"
+                href="https://app.adplist.org/"
               >
                 <img
                   src={ADP}
@@ -80,7 +80,7 @@ const MentorsPage = () => {
 
             <h2 className="text-xl">x</h2>
             <div className="flex flex-wrap justify-center">
-              <a
+              <div
                 className=" w-16 h-16 md:w-28 md:h-28"
                 target="_blank"
                 rel="noreferrer"
@@ -90,7 +90,7 @@ const MentorsPage = () => {
                   alt="..."
                   className="transition rounded-full duration-500 ease-in-out transform hover:scale-105 shadow-lg"
                 />
-              </a>
+              </div>
             </div>
             
           </div>
@@ -100,6 +100,7 @@ const MentorsPage = () => {
       <iframe
         className="w-screen h-screen my-20"
         src="https://adplist.org/explore"
+        title="ADP LIST"
       >
         <p>Your browser does not support iframes.</p>
       </iframe>

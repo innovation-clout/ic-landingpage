@@ -7,8 +7,8 @@ const OppertunitiesPage = () => {
         className="hidden w-screen h-screen bg-cover bg-no-repeat md:flex flex-col items-center justify-center pb-64 px-20 gap-10"
         style={{ backgroundImage: `url('${Banner}')` }}
       >
-        <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10">
-          <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light h-10 rounded-full">
+        <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 md:mb-40 lg:mb-0">
+          <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light h-10 rounded-full ">
           ENDLESS POSSIBILITIES WITHIN YOUR REACH
           </div>
 
