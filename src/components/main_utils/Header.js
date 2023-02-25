@@ -33,7 +33,7 @@ const Header = () => {
               opportunities
             </a>
             <div className="" onClick={() => setIsOpen(true)}>
-              partnerships
+              ambassadors
             </div>
             <a className="" href="/mentors">
               mentors

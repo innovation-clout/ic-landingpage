@@ -1,11 +1,12 @@
 import LogoBlank from "../../images/logo-purple-text.svg";
+import Mic from "../../images/mic.svg"
 
 const Sidebar = ({ openNav, setNav, setIsOpen, i }) => {
   return openNav ? (
     <div
-      className={` w-screen h-screen flex md:hidden justify-start items-center inset-0 z-100 bg-black bg-opacity-70`}
+      className={` w-screen h-screen flex md:hidden justify-start items-center inset-0 z-100 bg-black bg-opacity-70  `}
     >
-      <div className="w-1/2 h-screen bg-white flex flex-col text-center items-center">
+      <div className={`w-1/2 h-screen fixed bg-white flex flex-col text-center items-center transition duration-500 ease-in-out transform ease-in-out transition-all duration-300  duration-300 ${ openNav ? 'translate-x-0' : '-translate-x-full'}`}>
         <div
           onClick={() => setNav(false)}
           className="w-full flex flex-row justify-end px-4 text-black text-xl font-light pt-2"
@@ -22,37 +23,36 @@ const Sidebar = ({ openNav, setNav, setIsOpen, i }) => {
           >
             {" "}
           </a>
-          <div className="ml-3 flex flex-col items-start gap-8 h-full justify-between">
-          <div className="flex flex-col gap-8 items-start">
-          <a className="" href="/discover">
-              Discover
-            </a>
-            <a className="" href="/opportunities">
-              Opportunities
-            </a>
-            <div className="" onClick={() => setIsOpen(true)}>
-              Partnerships
-            </div>
-            <a className="" href="/mentors">
-              Mentors
-            </a>
-          </div>
-            
-            <div className="flex flex-col gap-4 mb-4">
-              <div className="bg-gradient-to-r from-purple to-aqua justify-content-center font-bold tracking-wider text-center rounded-lg text-white py-3 background-animate px-10 flex flex-row items-center text-center">
-                <a
-                  href="https://anchor.fm/clint953"
-                  className="w-full self-center text-center"
-                >
-                  podcast
-                </a>
+          <div className="ml-3 flex flex-col items-start gap-8 h-full">
+            <div className="flex flex-col gap-8 items-start">
+              <a className="" href="/discover">
+                Discover
+              </a>
+              <a className="" href="/opportunities">
+                Opportunities
+              </a>
+              <div className="" onClick={() => setIsOpen(true)}>
+              Ambassadors
               </div>
+              <a className="" href="/mentors">
+                Mentors
+              </a>
+              <a href="/resources" className="">
+                Resources
+              </a>
+              <div className="w-full flex flex-row items-center gap-2">
+              <a
+                href="https://anchor.fm/clint953"
+                target={'_blank'}
+                rel={"noreferrer"}
+                className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple to-aqua"
+              >
+                Podcast
+              </a>
+              <div className="w-6 h-6 bg-contain bg-no-repeate" style={{backgroundImage: `url('${Mic}')`}} />
+              </div>
+              
 
-              <div className="border-aqua border-2 justify-content-center font-bold tracking-wider text-aqua text-center rounded-lg text-white py-3 background-animate px-8 flex flex-row items-center text-center">
-                <a href="/resources" className="w-full self-center text-center">
-                  resources
-                </a>
-              </div>
             </div>
           </div>
         </div>
