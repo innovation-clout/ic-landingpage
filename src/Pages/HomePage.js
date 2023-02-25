@@ -2,6 +2,7 @@ import Banner from "../images/banner.svg";
 import MobileBanner from "../images/mobile-banner.svg"
 import PartnerShips from "../components/homepage-components/partnerships";
 import CallToAction from "../components/homepage-components/callToAction";
+import MobileCallToAction from "../components/homepage-components/mobileCallToAction";
 import JoinCommunity from "../components/homepage-components/joinCommunity";
 import Process from "../components/homepage-components/Process";
 import Astro from "../images/astronaut.svg"
@@ -56,7 +57,14 @@ function HomePage() {
 
       <PartnerShips />
 
-      <CallToAction className="my-20" />
+      <div className="hidden md:flex">
+      <CallToAction />
+      </div>
+
+      <div className="flex md:hidden mb-20">
+      <MobileCallToAction />
+      </div>
+
 
     </div>
   );
