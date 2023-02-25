@@ -51,6 +51,8 @@ const MentorsPage = () => {
         </div>
       </div>
 
+      
+
       <div className="flex flex-col md:hidden bg-cover h-screen w-full justify-center"   style={{ backgroundImage: `url('${MobileBanner}')` }}>
       
       <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 mb-96">

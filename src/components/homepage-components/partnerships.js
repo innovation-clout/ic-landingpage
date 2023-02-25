@@ -8,8 +8,7 @@ import ADP from "../../images/partnerships/adp.png";
 import JA from "../../images/partnerships/ja.png"
 import P100 from "../../images/partnerships/prospect-100.png"
 import Frenter from "../../images/partnerships/frenter.png"
-
-
+import BC from "../../images/partnerships/bc.png"
 
 import "./homepage_css/looper-styles.css";
 
@@ -43,6 +42,7 @@ const PartnerShips = () => {
           <Partner image={JA} link="https://www.jaworldwide.org/" />
           <Partner image={P100} link="https://www.prospect100.com/" />
           <Partner image={Frenter} link="https://www.frenter.com/" />
+          <Partner image={BC} link="https://www.bachmanitycap.com/" />
         </div>
       </InfiniteLooper>
     </div>
