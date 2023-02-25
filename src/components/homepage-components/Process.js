@@ -46,7 +46,7 @@ const Process = () => {
             <InfoBlurb
               title={"Quick Portfolio Set-Up"}
               description={
-                <h2 className="font-light text-lg ">
+                <h2 className="font-light text-lg md:text-center ">
                   Plug in your information and build your own centralized career
                   portfolio and personal roadmap within seconds.
                 </h2>
@@ -55,7 +55,7 @@ const Process = () => {
             <InfoBlurb
               title={"Portfolio Evaluations"}
               description={
-                <h2 className="font-light text-lg">
+                <h2 className="font-light text-lg md:text-center">
                   Our platform is built to provide a seamless user experience
                   that delivers accurate portfolio evaluations for the current
                   market trends.
@@ -65,7 +65,7 @@ const Process = () => {
             <InfoBlurb
               title={"Launch Ari"}
               description={
-                <h2 className="font-light text-lg">
+                <h2 className="font-light text-lg md:text-center">
                   With access to your own Digital Career advisor, navigating
                   your career path has never been easier.
                 </h2>
