@@ -75,7 +75,7 @@ const Footer = () => {
           <SocialIcon Icon={Instagram} link={"https://www.instagram.com/torpedo.world/"} />
 
           <div className="flex items-center justify-center mt-2">
-            <SocialIcon Icon={Twitter} /> link={"https://twitter.com/ExecTorpedo"}
+            <SocialIcon Icon={Twitter} link={"https://twitter.com/ExecTorpedo"} />
           </div>
 
           <SocialIcon Icon={Linkedin} link={"https://www.linkedin.com/company/jointorpedo/about/"}/>
