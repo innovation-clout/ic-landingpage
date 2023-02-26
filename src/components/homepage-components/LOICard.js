@@ -7,7 +7,7 @@ import Tilt from "react-parallax-tilt";
 
 const LOICard = () => {
   return (
-    <div className="w-full flex justify-center p-20 relative overflow-x-clip">
+    <div className="w-full flex justify-center p-20 relative overflow-x-clip mb-20 md:mb-0 md:p-0 lg:p-20">
       <Tilt>
         <div className="glass text-white flex flex-col gap-2 items-start justify-center font-bold transition duration-500 ease-in-out transform hover:scale-105 shadow-lg">
           <p className="text-sm font-light">Backed by</p>
@@ -15,9 +15,9 @@ const LOICard = () => {
             href={"https://www.theleagueofinnovators.org/"}
             rel={"noreferrer"}
             target={"_blank"}
-            className={`bg-cover w-40 h-12 `}
+            className={`bg-cover w-40 h-12 text-xs `}
             style={{ backgroundImage: `url('${LOI}')` }}
-          />
+          >.</a>
           <a
             href={"https://www.1517fund.com/"}
             rel={"noreferrer"}
@@ -30,11 +30,11 @@ const LOICard = () => {
       </Tilt>
 
       <div
-        className="bg-cover w-[40rem] h-[40rem] absolute top-10 -right-28 opacity-40"
+        className="bg-cover w-[40rem] h-[40rem] absolute top-10 -right-28 opacity-40 hidden md:flex"
         style={{ backgroundImage: `url('${Planet3}')` }}
       />
       <div
-        className="bg-cover w-[27rem] h-64 absolute -top-10 left-10 opacity-50"
+        className="bg-cover w-[27rem] h-64 absolute -top-10 left-10 opacity-50 hidden md:flex"
         style={{ backgroundImage: `url('${Planet2}')` }}
       />
     </div>

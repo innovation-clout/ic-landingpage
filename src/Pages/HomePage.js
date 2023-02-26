@@ -10,7 +10,6 @@ import AstroMobile from "../images/mobile-astro.svg";
 import DoubleArrow from "../images/double-arrow.svg";
 import JoinCommunityPopup from "../components/homepage-components/joinCommunityPopup";
 import LOICard from "../components/homepage-components/LOICard";
-import Tilt from "react-parallax-tilt"
 import "../components/homepage-components/homepage_css/homepage.css";
 import { useState } from "react";
 
