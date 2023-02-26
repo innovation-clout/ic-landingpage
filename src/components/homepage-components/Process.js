@@ -112,7 +112,7 @@ const Process = () => {
         
         <div
         ref={rocket}
-          className={`hidden lg:block absolute left-0 w-48 h-48 bg-cover ${useOnScreen(rocket, "50%") && "obj"}`}
+          className={`hidden lg:block absolute left-0 w-48 h-48 bg-cover ${useOnScreen(rocket, "30%") && "obj"}`}
           style={{backgroundImage: `url('${Rocket}')` }}
         />
        
