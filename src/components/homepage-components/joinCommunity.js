@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
-import Joined from "../../images/comm-joined.svg";
+import Instagram from "../../images/social_media/instagram-white.svg";
+import Twitter from "../../images/social_media/twitter-white.svg";
+import Linkedin from "../../images/social_media/linkedin-white.svg";
 import axios from "axios";
 
 const JoinCommunity = () => {
@@ -8,7 +10,6 @@ const JoinCommunity = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
     setisSubmitted(true);
 
     axios
@@ -21,15 +22,47 @@ const JoinCommunity = () => {
       });
   };
 
+  const SocialIcon = ({ link, Icon }) => {
+    return (
+      <a
+        href={link}
+        className="bg-contain bg-no-repeat h-4 w-4 md:h-6 md:w-6 text-white transition duration-500 ease-in-out transform hover:scale-150"
+        target={"_blank"}
+        rel="noreferrer"
+        style={{
+          backgroundImage: `url('${Icon}')`,
+        }}
+      >
+        {" "}
+      </a>
+    );
+  };
+
   return (
     (isSubmitted && (
-      <div className="w-full flex flex-row items-center justify-center justify-content-center md:px-20 lg:px-0">
- <div
-        className="w-full bg-contain bg-no-repeat h-20"
-        style={{ backgroundImage: `url('${Joined}')` }}
-      />
+      <div className="w-full flex flex-row items-center justify-center justify-content-center gap-3 md:px-20 lg:px-0 bg-white bg-opacity-40 rounded-md py-3">
+        <h2 className="uppercase text-3xl font-bold tracking-wider">
+          connect with us
+        </h2>
+        <div className="flex flex-row gap-3 items-center">
+          <SocialIcon
+            Icon={Instagram}
+            link={"https://www.instagram.com/torpedo.world/"}
+          />
+
+          <div className="flex items-center justify-center">
+            <SocialIcon
+              Icon={Twitter}
+              link={"https://twitter.com/ExecTorpedo"}
+            />
+          </div>
+
+          <SocialIcon
+            Icon={Linkedin}
+            link={"https://www.linkedin.com/company/jointorpedo/about/"}
+          />
+        </div>
       </div>
-     
     )) || (
       <form
         method="post"

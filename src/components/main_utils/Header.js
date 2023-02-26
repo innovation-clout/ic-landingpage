@@ -59,10 +59,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`${isComming && "w-screen h-screen inset-0 z-100 bg-black bg-opacity-70" } flex md:hidden justify-start items-center `} onClick={() => setIsComming(!isComming)}>
+      <div className={`${isComming && "w-screen h-screen inset-0 z-100 bg-black bg-opacity-70 justify-start items-center " }  flex md:hidden `} onClick={() => setIsComming(!isComming)}>
         <Sidebar setNav={setIsComming} OpenNav={isComming} setIsOpen={setIsOpen} />
       </div>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2"></div>
+
       <PartnersPopup isOpen={isOpen} setisOpen={setIsOpen} />
     </header>
   );

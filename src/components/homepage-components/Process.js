@@ -19,9 +19,9 @@ const Process = () => {
     );
   };
 
-  const rocket = useRef(document.querySelector(".rocket"))
+  const rocket = useRef(document.querySelector(".rocket"), "40px")
 
-  console.log(useOnScreen(rocket))
+ 
 
 
 
@@ -112,7 +112,7 @@ const Process = () => {
         
         <div
         ref={rocket}
-          className={`hidden lg:block absolute left-0 w-48 h-48 bg-cover ${useOnScreen(rocket) && "obj"}`}
+          className={`hidden lg:block absolute left-0 w-48 h-48 bg-cover ${useOnScreen(rocket, "100%") && "obj"}`}
           style={{backgroundImage: `url('${Rocket}')` }}
         />
        

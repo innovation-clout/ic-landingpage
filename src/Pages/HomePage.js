@@ -1,21 +1,21 @@
 import Banner from "../images/banner.svg";
-import MobileBanner from "../images/mobile-banner.svg"
+import MobileBanner from "../images/mobile-banner.svg";
 import PartnerShips from "../components/homepage-components/partnerships";
 import CallToAction from "../components/homepage-components/callToAction";
 import MobileCallToAction from "../components/homepage-components/mobileCallToAction";
 import JoinCommunity from "../components/homepage-components/joinCommunity";
 import Process from "../components/homepage-components/Process";
-import Astro from "../images/astronaut.svg"
-import AstroMobile from "../images/mobile-astro.svg"
-import DoubleArrow from "../images/double-arrow.svg"
+import Astro from "../images/astronaut.svg";
+import AstroMobile from "../images/mobile-astro.svg";
+import DoubleArrow from "../images/double-arrow.svg";
 import JoinCommunityPopup from "../components/homepage-components/joinCommunityPopup";
 import LOICard from "../components/homepage-components/LOICard";
-import "../components/homepage-components/homepage_css/homepage.css"
+import Tilt from "react-parallax-tilt"
+import "../components/homepage-components/homepage_css/homepage.css";
 import { useState } from "react";
 
 function HomePage() {
-  const [isOpen, setIsOpen] = useState(false)
-
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="relative flex flex-col w-full h-full bg-navy" id="join">
@@ -35,41 +35,56 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="floating absolute bg-cover w-96 h-96 right-0" style={{ backgroundImage: `url('${Astro}')` }}/>
+        <div
+          className="floating absolute bg-cover w-96 h-96 right-0"
+          style={{ backgroundImage: `url('${Astro}')` }}
+        />
       </div>
 
-      <div className="flex flex-col md:hidden bg-cover h-screen w-full"   style={{ backgroundImage: `url('${MobileBanner}')` }}>
-      <div className="floating absolute bg-cover w-72 h-72 left-0 top-10" style={{ backgroundImage: `url('${AstroMobile}')` }}/>
-      <div className="flex flex-col gap-10">
-      <h2 className="text-4xl text-center tracking-wider font-bold text-white mt-64 mx-10">
-        Let the opportunities come to you. 
+      <div
+        className="flex flex-col md:hidden bg-cover h-screen w-full"
+        style={{ backgroundImage: `url('${MobileBanner}')` }}
+      >
+        <div
+          className="floating absolute bg-cover w-72 h-72 left-0 top-10"
+          style={{ backgroundImage: `url('${AstroMobile}')` }}
+        />
+        <div className="flex flex-col gap-10">
+          <h2 className="text-4xl text-center tracking-wider font-bold text-white mt-64 mx-10">
+            Let the opportunities come to you.
           </h2>
-          <div className="bg-lilac h-16 mx-20 rounded-xl flex flex-row justify-center items-center" onClick={() => setIsOpen(true)}>
-            <h2 className="uppercase text-white font-extrabold text-2xl">join now</h2>
-            <div className="bg-cover w-12 h-12" style={{ backgroundImage: `url('${DoubleArrow}')` }} />
+          <div
+            className="bg-lilac h-16 mx-20 rounded-xl flex flex-row justify-center items-center"
+            onClick={() => setIsOpen(true)}
+          >
+            <h2 className="uppercase text-white font-extrabold text-2xl">
+              join now
+            </h2>
+            <div
+              className="bg-cover w-12 h-12"
+              style={{ backgroundImage: `url('${DoubleArrow}')` }}
+            />
           </div>
-          
-            <JoinCommunityPopup isOpen={isOpen} setisOpen={setIsOpen}/>
-      </div>
-       
+
+          <JoinCommunityPopup isOpen={isOpen} setisOpen={setIsOpen} />
+        </div>
       </div>
 
-     
+
+      <LOICard />
+
+      
       <Process />
 
       <PartnerShips />
 
       <div className="hidden md:flex">
-      <CallToAction />
+        <CallToAction />
       </div>
 
       <div className="flex md:hidden mb-40">
-      <MobileCallToAction />
+        <MobileCallToAction />
       </div>
-
-      <LOICard/>
-
-
     </div>
   );
 }
