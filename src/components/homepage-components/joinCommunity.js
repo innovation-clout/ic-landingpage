@@ -40,8 +40,8 @@ const JoinCommunity = () => {
 
   return (
     (isSubmitted && (
-      <div className="w-full flex flex-row items-center justify-center justify-content-center gap-3 md:px-20 lg:px-0 bg-white bg-opacity-40 rounded-md py-3">
-        <h2 className="uppercase text-3xl font-bold tracking-wider">
+      <div className="w-full flex flex-row items-center justify-center justify-content-center gap-3 bg-white bg-opacity-40 rounded-md py-3">
+        <h2 className="uppercase text-xs md:text-xl lg:text-3xl font-bold tracking-wider">
           connect with us
         </h2>
         <div className="flex flex-row gap-3 items-center">

@@ -14,7 +14,7 @@ const JoinCommunityPopup = ({ isOpen, setisOpen }) => {
         >
           x
         </div>
-        <div className="flex flex-col w-full h-full items-center justify-center pb-10 gap-3">
+        <div className="flex flex-col w-full h-full items-center justify-center pb-10 gap-3 px-5">
           <h2 className="md:text-xl opacity-60 text-white font-extrabold uppercase z-0 tracking-wider">
             accelerate your success
           </h2>

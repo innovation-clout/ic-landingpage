@@ -9,7 +9,7 @@ const LOICard = () => {
   return (
     <div className="w-full flex justify-center p-20 relative overflow-x-clip mb-20 md:mb-0 md:p-0 lg:p-20">
       <Tilt>
-        <div className="glass text-white flex flex-col gap-2 items-start justify-center font-bold transition duration-500 ease-in-out transform hover:scale-105 shadow-lg">
+        <div className="glass -top-56 -left-20 md:absolute lg:static text-white flex flex-col gap-2 items-start justify-center font-bold transition duration-500 ease-in-out transform hover:scale-105 shadow-lg">
           <p className="text-sm font-light">Backed by</p>
           <a
             href={"https://www.theleagueofinnovators.org/"}
@@ -30,11 +30,11 @@ const LOICard = () => {
       </Tilt>
 
       <div
-        className="bg-cover w-[40rem] h-[40rem] absolute top-10 -right-28 opacity-40 hidden md:flex"
+        className="bg-cover w-[40rem] h-[40rem] absolute lg:top-10 lg:-right-28 opacity-40 hidden lg:flex"
         style={{ backgroundImage: `url('${Planet3}')` }}
       />
       <div
-        className="bg-cover w-[27rem] h-64 absolute -top-10 left-10 opacity-50 hidden md:flex"
+        className="bg-cover w-[27rem] h-64 absolute lg:-top-10 lg:left-10 opacity-50 hidden lg:flex"
         style={{ backgroundImage: `url('${Planet2}')` }}
       />
     </div>
