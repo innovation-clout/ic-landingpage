@@ -6,7 +6,7 @@ import Star2 from "../../images/planets/star2.svg"
 import Moon from "../../images/planets/moon-mini.svg"
 import useOnScreen from "../main_utils/useOnScreen";
 import { useRef } from "react";
-import "../main_utils/footer.css"
+import "../main_utils/utility_css/footer.css"
 import "./homepage_css/homepage.css"
 const Process = () => {
   const InfoBlurb = ({ title, description }) => {
@@ -86,7 +86,7 @@ const Process = () => {
                 </h2>
               }
             />
-            <div className="w-10 h-10 bg-cover absolute right-16 md:right-40 top-56 md:top-48 floating" style={{ backgroundImage: `url('${Stars}')`}}/>
+            <div className="w-10 h-10 bg-cover absolute right-16 md:right-40 top-48 floating" style={{ backgroundImage: `url('${Stars}')`}}/>
             <InfoBlurb
               title={"Portfolio Evaluations"}
               description={

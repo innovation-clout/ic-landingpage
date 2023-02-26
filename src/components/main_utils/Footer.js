@@ -5,7 +5,7 @@ import Moon from "../../images/planets/moon.svg";
 import Rocket from "../../images/rocket-main.svg";
 import Text from "../../images/launch-career.svg";
 import Text2 from "../../images/launch-career-purple.svg";
-import "./footer.css";
+import "./utility_css/footer.css";
 import FooterBg from "../../images/footer-bg.svg";
 import { Link } from "react-scroll";
 
@@ -101,7 +101,7 @@ const Footer = () => {
             </div>
 
             <div
-              className="hidden lg:block bg-cover bg-no-repeat rotate absolute"
+              className="hidden lg:block bg-cover bg-no-repeat rotate absolute lg:left-[17rem] lg:-bottom-[20rem] xl:-bottom-[20rem] xl:left-[30rem]"
               style={{
                 backgroundImage: `url('${Moon}')`,
                 width: "30rem",

@@ -10,6 +10,7 @@ import AstroMobile from "../images/mobile-astro.svg";
 import DoubleArrow from "../images/double-arrow.svg";
 import JoinCommunityPopup from "../components/homepage-components/joinCommunityPopup";
 import LOICard from "../components/homepage-components/LOICard";
+import FadeIn from "../components/main_utils/Fadein";
 import "../components/homepage-components/homepage_css/homepage.css";
 import { useState } from "react";
 
@@ -22,8 +23,8 @@ function HomePage() {
         className="hidden w-full h-screen bg-cover bg-no-repeat md:flex flex-col lg:flex-row py-20 px-10 lg:px-20"
         style={{ backgroundImage: `url('${Banner}')` }}
       >
-        <div className="flex flex-col w-full lg:w-2/3 gap-4 ">
-          <h2 className="text-4xl text-center md:text-left md:text-5xl lg:text-7xl font-bold text-white">
+        <div className="flex flex-col w-full xl:w-2/3 gap-4 ">
+          <h2 className="text-4xl text-center md:text-left md:text-5xl xl:text-7xl font-bold text-white">
             The career advisor you’ve been wishing for
           </h2>
           <div className="flex flex-col w-3/5 py-8 md:py-10 md:gap-5">
@@ -69,21 +70,28 @@ function HomePage() {
         </div>
       </div>
 
+      <FadeIn>
+        <LOICard />
+      </FadeIn>
 
-      <LOICard />
+      <FadeIn>
+        <Process />
+      </FadeIn>
 
-      
-      <Process />
+      <FadeIn>
+        <PartnerShips />
+      </FadeIn>
 
-      <PartnerShips />
-
-      <div className="hidden md:flex">
-        <CallToAction />
-      </div>
-
-      <div className="flex md:hidden mb-40">
-        <MobileCallToAction />
-      </div>
+      <FadeIn>
+        <div className="hidden md:flex">
+          <CallToAction />
+        </div>
+      </FadeIn>
+      <FadeIn>
+        <div className="flex md:hidden mb-40">
+          <MobileCallToAction />
+        </div>
+      </FadeIn>
     </div>
   );
 }

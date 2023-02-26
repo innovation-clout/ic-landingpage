@@ -1,7 +1,8 @@
 import Banner from "../images/banner.svg";
 import ADP from "../images/partnerships/adp.png";
 import Torpedo from "../images/torpedo-circle.svg";
-import MobileBanner from "../images/mobile-banner-2.svg"
+import MobileBanner from "../images/mobile-banner-2.svg";
+import FadeIn from "../components/main_utils/Fadein";
 const MentorsPage = () => {
   return (
     <div className="w-screen h-full">
@@ -35,9 +36,7 @@ const MentorsPage = () => {
 
             <h2 className="text-xl">x</h2>
             <div className="flex flex-wrap justify-center">
-              <div
-                className=" w-16 h-16 md:w-28 md:h-28"
-              >
+              <div className=" w-16 h-16 md:w-28 md:h-28">
                 <img
                   src={Torpedo}
                   alt="..."
@@ -45,16 +44,15 @@ const MentorsPage = () => {
                 />
               </div>
             </div>
-            
           </div>
         </div>
       </div>
 
-      
-
-      <div className="flex flex-col md:hidden bg-cover h-screen w-full justify-center"   style={{ backgroundImage: `url('${MobileBanner}')` }}>
-      
-      <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 mb-96">
+      <div
+        className="flex flex-col md:hidden bg-cover h-screen w-full justify-center"
+        style={{ backgroundImage: `url('${MobileBanner}')` }}
+      >
+        <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 mb-96">
           <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light py-2 rounded-full ">
             <h2>PARTNERING WITH ADP LIST</h2>
           </div>
@@ -92,18 +90,19 @@ const MentorsPage = () => {
                 />
               </div>
             </div>
-            
           </div>
         </div>
       </div>
 
-      <iframe
-        className="w-screen h-screen my-20"
-        src="https://adplist.org/explore"
-        title="ADP LIST"
-      >
-        <p>Your browser does not support iframes.</p>
-      </iframe>
+      <FadeIn>
+        <iframe
+          className="w-screen h-screen my-20"
+          src="https://adplist.org/explore"
+          title="ADP LIST"
+        >
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      </FadeIn>
     </div>
   );
 };

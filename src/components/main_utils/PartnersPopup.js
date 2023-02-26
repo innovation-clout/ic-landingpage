@@ -72,7 +72,7 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="flex flex-col gap-5 pb-10 px-10 w-full auto-black"
+              className="flex flex-col gap-5 px-10 w-full auto-black"
             >
               <div className="flex flex-col gap-5">
                 <div className="bg-white w-full h-10 border-magenta border-2 relative rounded-md">

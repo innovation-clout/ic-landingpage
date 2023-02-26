@@ -6,8 +6,9 @@ import Pawel from "../images/team/pawel.png";
 import Harsh from "../images/team/harsh.png";
 import Rumeza from "../images/team/rumeza.png";
 import LinkedinBlank from "../images/social_media/linkedin-white.svg";
-import MobileBanner from "../images/mobile-banner-2.svg"
+import MobileBanner from "../images/mobile-banner-2.svg";
 import AdvisoryBoard from "../components/aboutpage-components/AdvisoryBoard";
+import FadeIn from "../components/main_utils/Fadein";
 
 const AboutPage = () => {
   const FoundingMember = ({ image, link }) => {
@@ -29,8 +30,6 @@ const AboutPage = () => {
     );
   };
 
-
-
   return (
     <div>
       <div
@@ -47,9 +46,11 @@ const AboutPage = () => {
           </h2>
         </div>
       </div>
-      <div className="flex flex-col md:hidden bg-cover h-screen w-full"   style={{ backgroundImage: `url('${MobileBanner}')` }}>
-      
-      <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 lg:mb-0">
+      <div
+        className="flex flex-col md:hidden bg-cover h-screen w-full"
+        style={{ backgroundImage: `url('${MobileBanner}')` }}
+      >
+        <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 lg:mb-0">
           <div className="uppercase border border-white text-lg w-64 py-1 font-light px-4 h-10 rounded-full">
             Introducing Torpedo
           </div>
@@ -58,44 +59,48 @@ const AboutPage = () => {
             meet torpedo
           </h2>
         </div>
-       
       </div>
-      <div className="flex flex-col items-center justify-center px-5 md:px-20 h-1/2">
-      <h2 className="text-4xl font-black text-white mb-10">Our Team</h2>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20 lg:px-20 md:my-10 lg:my-0 lg:px-0">
-          <FoundingMember
-            image={Dhruv}
-            link="https://www.linkedin.com/in/drvgoel/"
-          />
-          <FoundingMember
-            image={Clint}
-            link="https://www.linkedin.com/in/clint-c-a7461722b/"
-          />
-          <FoundingMember
-            image={Adrija}
-            link="https://www.linkedin.com/in/adrija-ghosh-968384243/"
-          />
-          <FoundingMember
-            image={Pawel}
-            link="https://www.linkedin.com/in/pawe%C5%82-plewa-78b398250/"
-          />
-          <FoundingMember
-            image={Rumeza}
-            link="https://www.linkedin.com/in/rumeza-fatima-899101229/"
-          />
-          <FoundingMember
-            image={Harsh}
-            link="https://www.linkedin.com/in/harsh-bhatt-8638041b1/"
-          />
+
+      <FadeIn>
+        <div className="flex flex-col items-center justify-center px-5 md:px-20 h-1/2">
+          <h2 className="text-4xl font-black text-white mb-10">Our Team</h2>
+          <FadeIn>
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20 lg:px-20 md:my-10 lg:my-0 lg:px-0">
+              <FoundingMember
+                image={Dhruv}
+                link="https://www.linkedin.com/in/drvgoel/"
+              />
+              <FoundingMember
+                image={Clint}
+                link="https://www.linkedin.com/in/clint-c-a7461722b/"
+              />
+              <FoundingMember
+                image={Adrija}
+                link="https://www.linkedin.com/in/adrija-ghosh-968384243/"
+              />
+              <FoundingMember
+                image={Pawel}
+                link="https://www.linkedin.com/in/pawe%C5%82-plewa-78b398250/"
+              />
+              <FoundingMember
+                image={Rumeza}
+                link="https://www.linkedin.com/in/rumeza-fatima-899101229/"
+              />
+              <FoundingMember
+                image={Harsh}
+                link="https://www.linkedin.com/in/harsh-bhatt-8638041b1/"
+              />
+            </div>
+          </FadeIn>
         </div>
-      </div>
+      </FadeIn>
 
-
-
-      <div className="flex flex-col items-center justify-center gap-10 mt-40 md:my-64">
-        <h2 className="text-4xl font-black text-white">Meet Our Advisors</h2>
-        <AdvisoryBoard />
-      </div>
+      <FadeIn>
+        <div className="flex flex-col items-center justify-center gap-10 mt-40 md:my-64">
+          <h2 className="text-4xl font-black text-white">Meet Our Advisors</h2>
+          <AdvisoryBoard />
+        </div>
+      </FadeIn>
     </div>
   );
 };

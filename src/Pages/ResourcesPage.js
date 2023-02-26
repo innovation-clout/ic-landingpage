@@ -2,6 +2,7 @@ import Banner from "../images/banner.svg";
 import TKS from "../images/partnerships/tks.png";
 import Torpedo from "../images/torpedo-circle.svg";
 import MobileBanner from "../images/mobile-banner-2.svg"
+import FadeIn from "../components/main_utils/Fadein";
 const ResourcesPage = () => {
   return (
     <div className="w-screen h-full">
@@ -93,14 +94,16 @@ const ResourcesPage = () => {
         </div>
        
       </div>
-
-      <iframe
+<FadeIn>
+<iframe
         className="w-screen h-screen my-20"
         src="https://www.tks.world/futureclass"
         title="TKS"
       >
         <p>Your browser does not support iframes.</p>
       </iframe>
+</FadeIn>
+     
     </div>
   );
 };
