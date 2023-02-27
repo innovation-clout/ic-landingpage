@@ -98,13 +98,15 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
               className="flex flex-col gap-5 px-10 w-full auto-black"
             >
               <div className="flex flex-col gap-5">
-                <div className="bg-white w-full h-10 border-magenta border-2 relative rounded-md">
+              <div className="flex flox-row gap-2">
+              <div className="bg-white w-full h-10 border-magenta border-2 relative rounded-md">
                   <h2 className="uppercase text-xs bg-magenta text-white font-semibold text-center px-1 rounded absolute left-1 -top-3">
                     name
                   </h2>
                   <input
                     type="name"
                     name="name"
+                    required={true}
                     minLength={3}
                     className="w-full h-full px-2 py-2 text-black"
                   />
@@ -116,17 +118,34 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
                   <input
                     type="email"
                     name="email"
+                    required={true}
+                    className="w-full h-full px-2 py-2 text-black"
+                  />
+                </div>
+              </div>
+
+
+                <div className="bg-white w-full h-10 border-magenta border-2 relative rounded-md">
+                  <h2 className="uppercase text-xs bg-magenta text-white font-semibold text-center px-1 rounded absolute left-1 -top-3">
+                    linkedin
+                  </h2>
+                  <input
+                    type="text"
+                    name="linkedin"
+                    minLength={20}
+                    required={true}
                     className="w-full h-full px-2 py-2 text-black"
                   />
                 </div>
 
-                <div className="bg-white w-full h-24 border-magenta border-2 relative rounded-md">
+                <div className="bg-white w-full h-18 border-magenta border-2 relative rounded-md">
                   <h2 className="uppercase text-xs bg-magenta text-white font-semibold text-center px-1 rounded absolute left-1 -top-3">
                     more about you
                   </h2>
                   <textarea
                     minLength={50}
                     name="message"
+                    required={true}
                     className="h-full w-full rounded-md px-2 py-2 text-black"
                   />
                 </div>

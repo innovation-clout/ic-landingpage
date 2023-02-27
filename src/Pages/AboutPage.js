@@ -9,6 +9,7 @@ import LinkedinBlank from "../images/social_media/linkedin-white.svg";
 import MobileBanner from "../images/mobile-banner-2.svg";
 import AdvisoryBoard from "../components/aboutpage-components/AdvisoryBoard";
 import FadeIn from "../components/main_utils/Fadein";
+import "../components/main_utils/utility_css/fadein.css";
 
 const AboutPage = () => {
   const FoundingMember = ({ image, link }) => {
@@ -36,29 +37,33 @@ const AboutPage = () => {
         className="hidden w-full h-screen bg-cover bg-no-repeat md:flex flex-col items-center justify-center px-20 pb-64 text-white"
         style={{ backgroundImage: `url('${Banner}')` }}
       >
-        <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 md:mb-40 lg:mb-0">
-          <div className="uppercase border border-white text-lg w-64 py-1 font-light px-4 h-10 rounded-full">
-            Introducing Torpedo
-          </div>
+        <FadeIn>
+          <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 md:mb-40 lg:mb-0 lineUp">
+            <div className="uppercase border border-white text-lg w-64 py-1 font-light px-4 h-10 rounded-full">
+              Introducing Torpedo
+            </div>
 
-          <h2 className="text-white font-black text-6xl md:text-9xl uppercase ">
-            meet torpedo
-          </h2>
-        </div>
+            <h2 className="text-white font-black text-6xl md:text-9xl uppercase lineUp ">
+              meet torpedo
+            </h2>
+          </div>
+        </FadeIn>
       </div>
       <div
         className="flex flex-col md:hidden bg-cover h-screen w-full"
         style={{ backgroundImage: `url('${MobileBanner}')` }}
       >
-        <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 lg:mb-0">
-          <div className="uppercase border border-white text-lg w-64 py-1 font-light px-4 h-10 rounded-full">
-            Introducing Torpedo
-          </div>
+        <FadeIn>
+          <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 lg:mb-0 lineUp">
+            <div className="uppercase border border-white text-lg w-64 py-1 font-light px-4 h-10 rounded-full">
+              Introducing Torpedo
+            </div>
 
-          <h2 className="text-white font-black text-6xl md:text-9xl uppercase ">
-            meet torpedo
-          </h2>
-        </div>
+            <h2 className="text-white font-black text-6xl md:text-9xl uppercase lineUp">
+              meet torpedo
+            </h2>
+          </div>
+        </FadeIn>
       </div>
 
       <FadeIn>

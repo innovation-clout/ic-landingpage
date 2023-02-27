@@ -12,6 +12,7 @@ import JoinCommunityPopup from "../components/homepage-components/joinCommunityP
 import LOICard from "../components/homepage-components/LOICard";
 import FadeIn from "../components/main_utils/Fadein";
 import "../components/homepage-components/homepage_css/homepage.css";
+import "../components/main_utils/utility_css/fadein.css"
 import { useState } from "react";
 
 function HomePage() {
@@ -25,7 +26,7 @@ function HomePage() {
       >
         <div className="flex flex-col w-full xl:w-2/3 gap-4 ">
         <FadeIn>
-        <h2 className="text-4xl text-center md:text-left md:text-5xl xl:text-7xl font-bold text-white">
+        <h2 className="text-4xl text-center md:text-left md:text-5xl xl:text-7xl font-bold text-white lineUp ">
             The career advisor you’ve been wishing for
           </h2>
         </FadeIn>

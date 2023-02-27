@@ -1,5 +1,6 @@
 import Banner from "../images/banner.svg";
 import MobileBanner from "../images/mobile-banner-2.svg"
+import "../components/main_utils/utility_css/fadein.css"
 const OppertunitiesPage = () => {
   return (
     <div className="w-screen h-full">
@@ -8,11 +9,11 @@ const OppertunitiesPage = () => {
         style={{ backgroundImage: `url('${Banner}')` }}
       >
         <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 md:mb-40 lg:mb-0">
-          <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light h-10 rounded-full ">
+          <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light h-10 rounded-full lineUp ">
           ENDLESS POSSIBILITIES WITHIN YOUR REACH
           </div>
 
-          <h2 className="text-white font-black text-4xl md:text-7xl lg:text-9xl uppercase ">
+          <h2 className="text-white font-black text-4xl md:text-7xl lg:text-9xl uppercase lineUp ">
             opportunities
           </h2>
         </div>

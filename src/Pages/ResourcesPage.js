@@ -3,6 +3,7 @@ import TKS from "../images/partnerships/tks.png";
 import Torpedo from "../images/torpedo-circle.svg";
 import MobileBanner from "../images/mobile-banner-2.svg"
 import FadeIn from "../components/main_utils/Fadein";
+import "../components/main_utils/utility_css/fadein.css"
 const ResourcesPage = () => {
   return (
     <div className="w-screen h-full">
@@ -10,12 +11,12 @@ const ResourcesPage = () => {
         className="hidden w-screen h-screen bg-cover bg-no-repeat md:flex flex-col items-center justify-center pb-64 px-20 gap-10"
         style={{ backgroundImage: `url('${Banner}')` }}
       >
-        <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 md:mb-40 lg:mb-0">
+        <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 md:mb-40 lg:mb-0 lineUp">
           <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light h-10 rounded-full">
             PARTNERING WITH THE KNOWLEDGE SOCIETY
           </div>
 
-          <h2 className="text-white font-black text-4xl md:text-7xl lg:text-9xl uppercase ">
+          <h2 className="text-white font-black text-4xl md:text-7xl lg:text-9xl uppercase lineUp ">
             resources
           </h2>
           <div className="flex flex-row justify-center items-center gap-10">
