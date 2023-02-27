@@ -58,44 +58,51 @@ const MentorsPage = () => {
         style={{ backgroundImage: `url('${MobileBanner}')` }}
       >
         <div className=" md:px-0 md:h-1/2 flex text-white flex-col justify-center items-center text-center gap-10 mb-96">
-          <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light py-2 rounded-full ">
-            <h2>PARTNERING WITH ADP LIST</h2>
-          </div>
-
-          <h2 className="text-white font-black text-4xl md:text-7xl lg:text-8xl uppercase ">
-            mentors
-          </h2>
-          <div className="flex flex-row justify-center items-center gap-5">
-            <div className="flex flex-wrap justify-center">
-              <a
-                className="w-16 h-16 md:w-28 md:h-28"
-                target="_blank"
-                rel="noreferrer"
-                href="https://app.adplist.org/"
-              >
-                <img
-                  src={ADP}
-                  alt="..."
-                  className="transition rounded-full duration-500 ease-in-out transform hover:scale-105 shadow-lg"
-                />
-              </a>
+          <FadeIn>
+            <div className="uppercase tracking-wider border border-white text-xs px-2  text-center md:text-lg py-1 md:px-4 font-light py-2 rounded-full lineUp ">
+              <h2>PARTNERING WITH ADP LIST</h2>
             </div>
+          </FadeIn>
 
-            <h2 className="text-xl">x</h2>
-            <div className="flex flex-wrap justify-center">
-              <div
-                className=" w-16 h-16 md:w-28 md:h-28"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={Torpedo}
-                  alt="..."
-                  className="transition rounded-full duration-500 ease-in-out transform hover:scale-105 shadow-lg"
-                />
+          <FadeIn>
+            <h2 className="text-white font-black text-4xl md:text-7xl lg:text-8xl uppercase lineUp ">
+              mentors
+            </h2>
+          </FadeIn>
+
+          <FadeIn>
+            <div className="flex flex-row justify-center items-center gap-5 lineUp">
+              <div className="flex flex-wrap justify-center">
+                <a
+                  className="w-16 h-16 md:w-28 md:h-28"
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://app.adplist.org/"
+                >
+                  <img
+                    src={ADP}
+                    alt="..."
+                    className="transition rounded-full duration-500 ease-in-out transform hover:scale-105 shadow-lg"
+                  />
+                </a>
+              </div>
+
+              <h2 className="text-xl">x</h2>
+              <div className="flex flex-wrap justify-center">
+                <div
+                  className=" w-16 h-16 md:w-28 md:h-28"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={Torpedo}
+                    alt="..."
+                    className="transition rounded-full duration-500 ease-in-out transform hover:scale-105 shadow-lg"
+                  />
+                </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
         </div>
       </div>
 

@@ -53,17 +53,18 @@ const AboutPage = () => {
         className="flex flex-col md:hidden bg-cover h-screen w-full"
         style={{ backgroundImage: `url('${MobileBanner}')` }}
       >
-        <FadeIn>
-          <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 lg:mb-0 lineUp">
-            <div className="uppercase border border-white text-lg w-64 py-1 font-light px-4 h-10 rounded-full">
+        <div className="h-1/2 flex flex-col justify-center items-center text-center gap-10 mb-20 lg:mb-0 ">
+          <FadeIn>
+            <div className="uppercase border border-white text-lg w-64 py-1 font-light px-4 h-10 rounded-full lineUp">
               Introducing Torpedo
             </div>
-
-            <h2 className="text-white font-black text-6xl md:text-9xl uppercase lineUp">
+          </FadeIn>
+          <FadeIn>
+            <h2 className="text-white font-black text-6xl md:text-9xl uppercase lineUp ">
               meet torpedo
             </h2>
-          </div>
-        </FadeIn>
+          </FadeIn>
+        </div>
       </div>
 
       <FadeIn>
