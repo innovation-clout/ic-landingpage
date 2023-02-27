@@ -133,7 +133,6 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
                     type="text"
                     name="linkedin"
                     minLength={20}
-                    required={true}
                     className="w-full h-full px-2 py-2 text-black"
                   />
                 </div>
@@ -143,7 +142,7 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
                     more about you
                   </h2>
                   <textarea
-                    minLength={50}
+                    minLength={20}
                     name="message"
                     required={true}
                     className="h-full w-full rounded-md px-2 py-2 text-black"
