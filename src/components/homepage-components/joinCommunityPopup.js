@@ -1,6 +1,7 @@
 import JoinCommunity from "./joinCommunity";
 
 const JoinCommunityPopup = ({ isOpen, setisOpen }) => {
+  
   return (
     <div
       className={`${

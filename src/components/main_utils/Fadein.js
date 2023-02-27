@@ -8,8 +8,9 @@ function FadeIn(props) {
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => setVisible(entry.isIntersecting));
       });
+       /* eslint-disable */
       observer.observe(domRef.current);
-      
+      return () => observer.unobserve(domRef.current);
     }, []);
     return (
       <div

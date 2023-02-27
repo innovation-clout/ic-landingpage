@@ -76,7 +76,7 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
         (isOpen && "block") || "hidden"
       } fixed w-screen h-screen animated fadeIn faster flex justify-center items-center inset-0 z-100 bg-black bg-opacity-70`}
     >
-      <div className="popup md:w-1/2 lg:w-2/5 h-96 bg-gradient-to-r from-indigo to-purple rounded-xl flex flex-col justify-center text-center items-center relative mx-10 md:mx-0 lg:lg-mx-0">
+      <div className="popup md:w-1/2 lg:w-2/5 h-[25rem] bg-gradient-to-r from-indigo to-purple rounded-xl flex flex-col justify-center text-center items-center relative mx-10 md:mx-0 lg:lg-mx-0">
         <div
           onClick={() => setisOpen(false)}
           className="w-full flex flex-row absolute top-0 left-2 justify-start px-4 text-white text-xl font-light pt-4"
@@ -100,6 +100,17 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
               <div className="flex flex-col gap-5">
                 <div className="bg-white w-full h-10 border-magenta border-2 relative rounded-md">
                   <h2 className="uppercase text-xs bg-magenta text-white font-semibold text-center px-1 rounded absolute left-1 -top-3">
+                    name
+                  </h2>
+                  <input
+                    type="name"
+                    name="name"
+                    minLength={3}
+                    className="w-full h-full px-2 py-2 text-black"
+                  />
+                </div>
+                <div className="bg-white w-full h-10 border-magenta border-2 relative rounded-md">
+                  <h2 className="uppercase text-xs bg-magenta text-white font-semibold text-center px-1 rounded absolute left-1 -top-3">
                     email
                   </h2>
                   <input
@@ -109,11 +120,12 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
                   />
                 </div>
 
-                <div className="bg-white w-full h-36 border-magenta border-2 relative rounded-md">
+                <div className="bg-white w-full h-24 border-magenta border-2 relative rounded-md">
                   <h2 className="uppercase text-xs bg-magenta text-white font-semibold text-center px-1 rounded absolute left-1 -top-3">
                     more about you
                   </h2>
                   <textarea
+                    minLength={50}
                     name="message"
                     className="h-full w-full rounded-md px-2 py-2 text-black"
                   />
@@ -169,11 +181,7 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
           (isAlertVisible && "block") || "hidden"
         } fixed top-0 left-0`}
       >
-        <Confetti
-          height={dimension.height}
-          width={dimension.width}
-      
-        />
+        <Confetti height={dimension.height} width={dimension.width} />
       </div>
     </div>
   ) : null;

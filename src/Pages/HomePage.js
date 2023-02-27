@@ -24,9 +24,12 @@ function HomePage() {
         style={{ backgroundImage: `url('${Banner}')` }}
       >
         <div className="flex flex-col w-full xl:w-2/3 gap-4 ">
-          <h2 className="text-4xl text-center md:text-left md:text-5xl xl:text-7xl font-bold text-white">
+        <FadeIn>
+        <h2 className="text-4xl text-center md:text-left md:text-5xl xl:text-7xl font-bold text-white">
             The career advisor you’ve been wishing for
           </h2>
+        </FadeIn>
+          
           <div className="flex flex-col w-3/5 py-8 md:py-10 md:gap-5">
             <h2 className="text-xl lg:text-3xl opacity-60 text-white font-extrabold uppercase z-0 tracking-wider">
               accelerate your success
@@ -41,7 +44,7 @@ function HomePage() {
         />
       </div>
 
-      <div
+<div
         className="flex flex-col md:hidden bg-cover h-screen w-full"
         style={{ backgroundImage: `url('${MobileBanner}')` }}
       >
@@ -70,7 +73,9 @@ function HomePage() {
         </div>
       </div>
 
-      <FadeIn>
+     
+
+      <FadeIn rootMargin={"100%"}>
         <LOICard />
       </FadeIn>
 
