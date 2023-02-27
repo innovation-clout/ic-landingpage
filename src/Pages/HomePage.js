@@ -81,9 +81,15 @@ function HomePage() {
         </div>
       </div>
 
-      <FadeIn rootMargin={"100%"}>
+      <div className="hidden md:block">
+        <FadeIn rootMargin={"100%"}>
+          <LOICard />
+        </FadeIn>
+      </div>
+
+      <div className="block md:hidden">
         <LOICard />
-      </FadeIn>
+      </div>
 
       <div className="w-full xl:mt-48">
         <Process />
