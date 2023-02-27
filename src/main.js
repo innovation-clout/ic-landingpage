@@ -12,7 +12,7 @@ import OpportunitiesPage from "./Pages/OpportunitiesPage";
 function LandingPage() {
   console.log()
   return (
-    <div className={`${((window.location.pathname === "/resources" || window.location.pathname === "/mentors") && "bg-white text-purple") || "bg-navy text-white"} h-full bg-contain bg-no-repeat`} >
+    <div className={`${((window.location.pathname === "/resources" || window.location.pathname === "/mentors") && "bg-white text-purple") || "bg-navy text-white"} h-full bg-contain bg-no-repeat`} style={{overflow: "hidden"}}>
       <Header />
       <div className="relative" style={{ zIndex: 1 }}>
         <Router>

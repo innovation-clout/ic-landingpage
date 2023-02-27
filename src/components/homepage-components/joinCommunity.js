@@ -1,12 +1,36 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Instagram from "../../images/social_media/instagram-white.svg";
 import Twitter from "../../images/social_media/twitter-white.svg";
 import Linkedin from "../../images/social_media/linkedin-white.svg";
 import axios from "axios";
+import Confetti from "react-confetti";
 
 const JoinCommunity = () => {
   const formRef = useRef(null);
   const [isSubmitted, setisSubmitted] = useState(false);
+
+  const [dimension, setDimension] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
+
+  useEffect(() => {
+    isSubmitted && setIsAlertVisible(true);
+
+    setTimeout(() => setIsAlertVisible(false), 8000);
+  }, [isSubmitted]);
+
+  const resize = () => {
+    setDimension({ width: window.innerWidth, height: window.innerHeight });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", resize);
+    return () => {
+      window.removeEventListener("resize", resize);
+    };
+  }, [dimension]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -61,6 +85,13 @@ const JoinCommunity = () => {
             Icon={Linkedin}
             link={"https://www.linkedin.com/company/jointorpedo/about/"}
           />
+        </div>
+        <div
+          className={`absolute ${
+            (isAlertVisible && "block") || "hidden"
+          } fixed top-0 left-0`}
+        >
+          <Confetti height={dimension.height} width={dimension.width} />
         </div>
       </div>
     )) || (

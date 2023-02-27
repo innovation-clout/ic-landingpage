@@ -26,7 +26,7 @@ const Process = () => {
 
 
   return (
-    <div className="flex flex-col h-full lg:h-screen w-full items-center justify-center gap-3 lg:mt-40 md:mb-0">
+    <div className="flex flex-col h-full lg:h-screen w-full items-center justify-center gap-3 lg:mt-40 md:mb-0 mb-40">
       <div className="flex flex-row items-center font-black text-white text-left w-full px-5 md:px-40 lg:px-28">
       <div className="flex flex-col">
         <div  className="w-20 h-20 bg-cover rotate" style={{ backgroundImage: `url('${Moon}')`}}/>
@@ -116,7 +116,7 @@ const Process = () => {
           style={{backgroundImage: `url('${Rocket}')` }}
         />
        
-       
+
       </div>
     </div>
   );

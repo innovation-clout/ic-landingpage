@@ -30,7 +30,7 @@ const LOICard = () => {
       </Tilt>
 
       <div
-        className="bg-cover w-[40rem] h-[40rem] absolute lg:top-10 lg:-right-28 opacity-40 hidden lg:flex"
+        className="bg-cover w-[40rem] h-[40rem] absolute lg:top-2 lg:-right-28 opacity-40 hidden lg:flex"
         style={{ backgroundImage: `url('${Planet3}')` }}
       />
       <div

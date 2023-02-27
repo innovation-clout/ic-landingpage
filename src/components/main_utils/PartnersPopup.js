@@ -1,12 +1,35 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Linkedin from "../../images/social_media/linkedin-white.svg";
 import Instagram from "../../images/social_media/instagram-white.svg";
 import Twitter from "../../images/social_media/twitter-white.svg";
 import emailjs from "@emailjs/browser";
+import Confetti from "react-confetti";
 
 const PartnersPopup = ({ isOpen, setisOpen }) => {
   const form = useRef();
   const [isSubmitted, setSubmitted] = useState(false);
+  const [dimension, setDimension] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
+
+  useEffect(() => {
+    isSubmitted && setIsAlertVisible(true);
+
+    setTimeout(() => setIsAlertVisible(false), 8000);
+  }, [isSubmitted]);
+
+  const resize = () => {
+    setDimension({ width: window.innerWidth, height: window.innerHeight });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", resize);
+    return () => {
+      window.removeEventListener("resize", resize);
+    };
+  }, [dimension]);
 
   const SocialIcon = ({ link, Icon }) => {
     return (
@@ -106,14 +129,14 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
           </div>
         ) : (
           <div className="flex flex-col w-full h-full my-20 px-10 gap-10">
-          <div>
-          <h2 className="uppercase font-extrabold text-2xl text-white">
-              Thank you for Applying!
-            </h2>
-            <h2 className="fonst-xl font-light tracking-wider mb-3 text-white">
-              We'll reach out to you soon :)
-            </h2>
-          </div>
+            <div>
+              <h2 className="uppercase font-extrabold text-2xl text-white">
+                Thank you for Applying!
+              </h2>
+              <h2 className="fonst-xl font-light tracking-wider mb-3 text-white">
+                We'll reach out to you soon :)
+              </h2>
+            </div>
 
             <div className="w-full flex flex-row items-center justify-center justify-content-center gap-3 bg-white bg-opacity-40 rounded-md py-3 px-4 ">
               <h2 className="uppercase text-white text-xs md:text-xl lg:text-3xl font-bold tracking-wider">
@@ -140,6 +163,17 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
             </div>
           </div>
         )}
+      </div>
+      <div
+        className={`absolute ${
+          (isAlertVisible && "block") || "hidden"
+        } fixed top-0 left-0`}
+      >
+        <Confetti
+          height={dimension.height}
+          width={dimension.width}
+      
+        />
       </div>
     </div>
   ) : null;

@@ -18,7 +18,7 @@ function HomePage() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative flex flex-col w-full h-full bg-navy" id="join">
+    <div className="relative flex flex-col w-full h-full bg-navy" style={{overflow: "hidden"}} id="join">
       <div
         className="hidden w-full h-screen bg-cover bg-no-repeat md:flex flex-col lg:flex-row py-20 px-10 lg:px-20"
         style={{ backgroundImage: `url('${Banner}')` }}
@@ -74,9 +74,11 @@ function HomePage() {
         <LOICard />
       </FadeIn>
 
-      <FadeIn>
-        <Process />
-      </FadeIn>
+<div className="w-full xl:mt-48">
+<Process />
+</div>
+        
+
 
       <FadeIn>
         <PartnerShips />

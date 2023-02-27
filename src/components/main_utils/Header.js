@@ -25,7 +25,7 @@ const Header = () => {
           >
             {" "}
           </a>
-          <div className="hidden md:flex flex-row gap-5 tracking-wider text-xs">
+          <div className="hidden md:flex flex-row gap-5 tracking-wider text-base font-light">
             <a className="" href="/discover">
               discover
             </a>
