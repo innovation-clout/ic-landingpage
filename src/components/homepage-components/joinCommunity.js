@@ -105,6 +105,7 @@ const JoinCommunity = () => {
         <input
           type="email"
           name="email"
+          required={true}
           placeholder="ENTER YOUR EMAIL"
           className="w-2/3 lg:w-auto rounded-full border-0 px-4 py-0 placeholder:text-sm placeholder:lg:text-xl placeholder-white placeholder:font-extrabold  placeholder:opacity-75 placeholder:tracking-wide text-white font-bold tracking-wider md:mx-2 md:my-5"
         />
