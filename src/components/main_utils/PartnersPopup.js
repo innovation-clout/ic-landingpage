@@ -132,7 +132,7 @@ const PartnersPopup = ({ isOpen, setisOpen }) => {
                   <input
                     type="text"
                     name="linkedin"
-                    minLength={20}
+                    minLength={10}
                     className="w-full h-full px-2 py-2 text-black"
                   />
                 </div>
