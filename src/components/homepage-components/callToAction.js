@@ -15,7 +15,8 @@ const CallToAction = () => {
         An enterprise backed platform. 
         </h2>
         <h2 className="self-center tracking-wider font-light md:text-2xl lg:w-3/4 text-center md:px-20">
-        Find opportunities curated just for you, accelerate your skills, and build incredible portfolios.
+        Allow Ari to help you find personalized opportunities, accelerate your skills, and build incredible portfolios.
+
         </h2>
 
         <div className="bg-gradient-to-r from-purple to-aqua justify-content-center text-lg font-bold tracking-wider text-center rounded-lg text-white py-3 background-animate h-10 w-48 px-10 flex flex-row items-center text-center">
