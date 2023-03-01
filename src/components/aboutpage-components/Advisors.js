@@ -3,7 +3,6 @@ import Eric from "../../images/advisors/eric-advisor.png";
 import Steven from "../../images/advisors/steven-advisor.png";
 import Zach from "../../images/advisors/zach-advisor.png";
 import Adam from "../../images/advisors/adam-advisor.png";
-import Pranav from "../../images/advisors/pranav-advisor.png";
 import Felix from "../../images/advisors/felix-advisor.png";
 import James from "../../images/advisors/james-advisor.png";
 import Harry from "../../images/advisors/harry-advisor.png";
@@ -67,13 +66,6 @@ const ADVISORS = [
         name: "James Wei",
         plug: "https://thinkglobalschool.org/",
         bio: "James was the founder and CEO of Worldview Technology Partners, a venture capital firm in San Francisco.",
-
-    },
-    {
-        image: Pranav,
-        name: "Pranav Menon",
-        plug: "https://www.linkedin.com/in/menonpranav/",
-        bio: "Pranav built his own A.I. consultancy firm. He is now a director at The Knowledge Society, a human accelerator for ambitious teenagers.",
 
     },
     {
