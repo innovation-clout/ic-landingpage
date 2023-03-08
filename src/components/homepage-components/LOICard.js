@@ -18,14 +18,6 @@ const LOICard = () => {
             className={`bg-cover w-40 h-12 text-xs `}
             style={{ backgroundImage: `url('${LOI}')` }}
           >.</a>
-          <a
-            href={"https://www.1517fund.com/"}
-            rel={"noreferrer"}
-            target={"_blank"}
-            className="font-extrabold text-xl tracking-wider uppercase text-transparent bg-clip-text bg-gradient-to-r from-white to-aqua"
-          >
-            1517 fund
-          </a>
         </div>
       </Tilt>
 
