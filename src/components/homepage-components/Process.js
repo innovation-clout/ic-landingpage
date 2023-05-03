@@ -52,7 +52,7 @@ const Process = () => {
               }
             />
             <InfoBlurb
-              title={"Empowering Students"}
+              title={"Empowering the Future"}
               description={
                 <h2 className="font-light text-lg md:text-center">
                   Empowering every student to maximize their true potential by opening up opportunities that they may have not known otherwise. 
