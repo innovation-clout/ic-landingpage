@@ -15,7 +15,7 @@ const CallToAction = () => {
         An enterprise backed platform. 
         </h2>
         <h2 className="self-center tracking-wider font-light md:text-2xl lg:w-3/4 text-center md:px-20">
-        Allow Ari to help you find personalized opportunities, accelerate your skills, and build incredible portfolios.
+        Allow Torpedo to help you find personalized opportunities, accelerate your skills, and build incredible portfolios.
 
         </h2>
 
