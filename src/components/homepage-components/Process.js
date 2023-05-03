@@ -52,10 +52,10 @@ const Process = () => {
               }
             />
             <InfoBlurb
-              title={"Portfolio Evaluations"}
+              title={"Empowering Students"}
               description={
                 <h2 className="font-light text-lg md:text-center">
-                  Our platform allows  you to have access to the AI tools you need for the current market trends.
+                  Empowering every student to maximize their true potential by opening up opportunities that they may have not known otherwise. 
                 </h2>
               }
             />
