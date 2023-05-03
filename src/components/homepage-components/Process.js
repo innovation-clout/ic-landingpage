@@ -84,12 +84,12 @@ const Process = () => {
             />
             <div className="w-10 h-10 bg-cover absolute right-16 md:right-40 top-48 floating" style={{ backgroundImage: `url('${Stars}')`}}/>
             <InfoBlurb
-              title={"Portfolio Evaluations"}
+              title={"Empowering the Future"}
               description={
                 <h2 className="font-light text-sm leading-10  md:px-40 md:text-center">
-                  Our platform is built to provide a seamless user experience
-                  that delivers accurate portfolio evaluations for the current
-                  market trends.
+                  Our platform helps students to maximize their true potential
+                  by opening up opportunities that they may have not known 
+                  otherwise.
                 </h2>
               }
             />
