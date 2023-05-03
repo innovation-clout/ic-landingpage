@@ -60,7 +60,7 @@ const Process = () => {
               }
             />
             <InfoBlurb
-              title={"Launch Ari"}
+              title={"Launch Torpedo"}
               description={
                 <h2 className="font-light text-lg md:text-center">
                   With access to your own Digital Career advisor, navigating your career path has never been easier.
@@ -95,7 +95,7 @@ const Process = () => {
             />
              <div className="w-20 h-20 bg-contain bg-no-repeat absolute right-3 md:left-40 bottom-32 md:bottom-36 floating" style={{ backgroundImage: `url('${Star2}')`, rotate: "-6deg"}}/>
             <InfoBlurb
-              title={"Launch Ari"}
+              title={"Launch Torpedo"}
               description={
                 <h2 className="font-light text-sm leading-10  md:px-40 md:text-center">
                   With access to your own Digital Career advisor, navigating
