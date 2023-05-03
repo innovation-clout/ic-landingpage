@@ -10,7 +10,7 @@ const LOICard = () => {
     <div className="w-full flex justify-center p-20 relative overflow-x-clip mb-20 md:mb-0 md:p-0 lg:p-20">
       <Tilt>
         <div className="glass -top-56 -left-20 md:absolute lg:static text-white flex flex-col gap-2 items-start justify-center font-bold transition duration-500 ease-in-out transform hover:scale-105 shadow-lg">
-          <p className="text-sm font-light">Backed by</p>
+          <p className="text-sm font-light">Supported by</p>
           <a
             href={"https://www.theleagueofinnovators.org/"}
             rel={"noreferrer"}
